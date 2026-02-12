@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption & Decryption Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Encryption & Decryption Tool</h1>
+    <p>Secure your messages with military-grade encryption.</p>
+    <p>YOU CAN'T ESCAPE OUR MATRIXXX</p>
+    
+    <div class="container">
+        <!-- Encryption Method Selector -->
+        <div class="method-selector">
+            <label for="method">Encryption Method</label>
+            <select id="method">
+                <option value="">Loading methods...</option>
+            </select>
+        </div>
+
+        <!-- Key Input (for AES) -->
+        <div class="key-container">
+            <label for="key">Secret Key</label>
+            <input type="text" id="key" placeholder="Enter your secret key (minimum 8 characters)">
+        </div>
+
+        <!-- Shift Input (for Caesar) -->
+        <div class="shift-container">
+            <label for="shift">Shift Value</label>
+            <input type="number" id="shift" value="3" min="1" max="25" placeholder="Enter shift value (1-25)">
+        </div>
+
+        <DIV class="ipop">
+        <!-- Input Section -->
+        <div class="input">
+            <label for="ip">Input Text</label>
+            <textarea name="inputfield" id="ip" placeholder="Enter the text to encrypt or decrypt"></textarea>
+             <div class="file">Or upload a file</div>
+            <input type="file" id="fileInput" accept=".txt">
+        </div>
+
+        <!-- Output Section -->
+        <div class="output">
+            <div class="lc">
+                <label for="op">Output Text</label>
+                <div class="copy">
+                    <button class="copy" id="copy">Copy</button>
+                </div>
+            </div>
+            <textarea name="outputfield" id="op" placeholder="Result will appear here..." readonly></textarea>
+        </div>
+        </DIV>
+
+        <!-- Action Buttons -->
+        <div class="buttons">
+            <button class="encrypt" id="Encrypt">Encrypt</button>
+            <button class="decrypt" id="Decrypt">Decrypt</button>
+            <button class="clearAll" id="ClearAll">Clear All</button>
+        </div>
+       <div id="notification"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

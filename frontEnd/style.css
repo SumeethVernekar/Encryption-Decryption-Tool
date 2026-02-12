@@ -1,0 +1,141 @@
+*{
+    font-family: 'Inter',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0%;
+    margin: 0%;
+background-color: #eff6ff;
+    
+}
+h1{
+    margin-top: 3rem;
+    color:#2d3748;
+}
+p{
+    margin-top: 5px;
+    color: (75, 85, 99, var(--tw-text-opacity));
+}
+h1,p{
+    text-align: center;   
+}
+.container{
+    font-size: medium;
+    font-weight: 400;
+    margin: 60px ;
+    background-color: white;
+    margin-top: 2rem;
+    padding-bottom: 25px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 50px;
+}
+.method-selector{
+    margin-left: 5.5rem;
+    margin-top: 3rem;
+    background-color: white;
+    font-size: medium;
+}
+.key-container{
+    background-color: white;
+    margin-left: 5.5rem;
+    margin-top: 8px;
+    margin-bottom: -2rem;
+}
+.key-container input{
+    width: 30%;
+    padding: 3px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background-color: white;
+}
+.encrypt, .decrypt , .clearAll{
+    height: 56px;
+    width: 164px;
+    border: solid 2px;
+    border-radius: 17px;
+    border-color: black;
+}
+#Encrypt{
+    background-color:  #3182ce;   ;
+    color: white;
+    font-size: medium;
+}
+#Encrypt:hover{
+    background-color: #1e40af;
+}
+#Decrypt{
+    background-color: #805ad5;
+    color: white;
+    font-size: medium;
+}
+#Decrypt:hover{
+    background-color: #7050b4;
+}
+
+#ClearAll{
+    font-size: medium;
+}
+.ipop{ 
+    background-color: white;
+     margin :14px; 
+     display: flex; 
+     padding: 1rem; 
+     align-items: center; 
+     justify-content: center; 
+} 
+.input,.output{ 
+    background-color: white; 
+    margin: 10px; 
+    width: 600px; 
+    height: 330px;
+} 
+textarea{
+     background-color: white;
+      border: solid 2px;
+       border-color: black;
+        border-radius: 10px;
+         height: 250px;
+          width:584px ; 
+          padding: 5px; 
+}
+#fileInput{
+    background-color: white;
+}
+label  {
+    background-color: white;
+}
+.copy{
+    background-color: white;
+    color: #3182ce;
+    border: none;
+    font-size: small;
+    font-weight:550
+}
+.copy:hover{
+    color: #1e40af;
+    background-color: #e2e9f4;
+    border-radius: 5px;
+}
+.file{
+    background-color: white;
+    font-size: small;
+    padding: 5px;
+    color: #2a4365;
+
+}
+
+.lc{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    
+}
+#notification{
+    background-color: white;
+    text-align: center;
+    margin: 0.5rem 2rem;
+    font-size:large;
+}
